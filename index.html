@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    <div id="particles-js"></div>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#">Abhinay Kowshik</a>
@@ -230,6 +229,64 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+    particlesJS("particles-js", {
+        "particles": {
+           "number": {
+              "value": 100,
+              "density": {
+                 "enable": true,
+                 "value_area": 800
+              }
+           },
+           "color": {
+              "value": "#2A9D8F"  // Accent color
+           },
+           "shape": {
+              "type": "circle",
+              "stroke": {
+                 "width": 0,
+                 "color": "#000000"
+              }
+           },
+           "opacity": {
+              "value": 0.5,
+              "random": false
+           },
+           "size": {
+              "value": 3,
+              "random": true
+           },
+           "line_linked": {
+              "enable": true,
+              "distance": 150,
+              "color": "#264653",  // Main color for lines
+              "opacity": 0.4,
+              "width": 1
+           },
+           "move": {
+              "enable": true,
+              "speed": 3,
+              "direction": "none"
+           }
+        },
+        "interactivity": {
+           "detect_on": "canvas",
+           "events": {
+              "onhover": {
+                 "enable": true,
+                 "mode": "repulse"
+              },
+              "onclick": {
+                 "enable": true,
+                 "mode": "push"
+              },
+              "resize": true
+           }
+        },
+        "retina_detect": true
+     });
+  </script>
 </body>
 </html>
->>>>>>> 6a6f43d9419b0fa23b01dad63b90c1516f054df4
