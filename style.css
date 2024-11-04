@@ -84,3 +84,21 @@ button, .contact-button {
         flex-direction: column; /* Stack skills on smaller screens */
     }
 }
+/* Particle Background Styles */
+#particles-js {
+    position: absolute; /* Positioned absolutely to cover the entire viewport */
+    width: 100%; /* Full width */
+    height: 100vh; /* Full height of the viewport */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    z-index: -1; /* Behind all other content */
+}
+
+/* Ensure main content layers over particles */
+body {
+    position: relative; /* Maintain a stacking context for other elements */
+    z-index: 1; /* Above the particle background */
+    background-color: #f4f4f4; /* Soft gray background */
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+}
