@@ -1,103 +1,86 @@
-<<<<<<< HEAD
+/* General Styles */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    color: #333;
-    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif; /* Use a modern sans-serif font */
+    color: #333; /* Dark gray for text */
+    background-color: #f4f4f4; /* Soft gray for background */
+    margin: 0;
+    padding: 0;
 }
 
-h1, h2, h5 {
-    font-weight: bold;
-}
-
+/* Navbar Styles */
 .navbar {
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(90deg, #264653, #2A9D8F); /* Gradient background */
 }
 
-.navbar-brand {
-    font-weight: bold;
+.navbar a {
+    color: #fff; /* White text for navbar links */
 }
 
-.section-title {
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    font-size: 1.5rem;
-    font-weight: bold;
+.navbar a:hover {
+    color: #E9C46A; /* Change link color on hover */
 }
 
-#about p, #contact p {
-    font-size: 1.1rem;
-    line-height: 1.7;
+/* Section Styles */
+section {
+    padding: 60px 0;
+    border-radius: 8px; /* Rounded corners for sections */
+    margin-bottom: 20px;
 }
 
-.experience-item h5 {
-    color: #007bff;
+#about {
+    background-color: #fff; /* White background for About section */
 }
 
-.project-card {
-    background-color: #ffffff;
+.experience-item {
+    background-color: #fff; /* White background for experience items */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Header Styles */
+h1, h2 {
+    color: #264653; /* Main color for headers */
+}
+
+h5 {
+    color: #2A9D8F; /* Accent color for job titles */
+}
+
+/* Skills Section Styles */
+.skills {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+/* Button Styles */
+button, .contact-button {
+    background-color: #E76F51; /* Accent color for button */
+    color: white;
+    border: none;
     border-radius: 5px;
-    transition: box-shadow 0.3s;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
 }
 
-.project-card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+.contact-button:hover {
+    background-color: #F4A261; /* Lighter shade on hover */
 }
 
-footer {
-    background-color: #e9ecef;
-    color: #6c757d;
-    font-size: 0.9rem;
-}
-=======
-body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    color: #333;
-    background-color: #f8f9fa;
-}
-
-h1, h2, h5 {
-    font-weight: bold;
-}
-
-.navbar {
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-brand {
-    font-weight: bold;
-}
-
-.section-title {
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-#about p, #contact p {
-    font-size: 1.1rem;
-    line-height: 1.7;
-}
-
-.experience-item h5 {
-    color: #007bff;
-}
-
+/* Project Card Styles */
 .project-card {
-    background-color: #ffffff;
-    border-radius: 5px;
-    transition: box-shadow 0.3s;
+    background-color: #fff; /* White background for project cards */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-.project-card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .skills {
+        flex-direction: column; /* Stack skills on smaller screens */
+    }
 }
-
-footer {
-    background-color: #e9ecef;
-    color: #6c757d;
-    font-size: 0.9rem;
-}
->>>>>>> 6a6f43d9419b0fa23b01dad63b90c1516f054df4
